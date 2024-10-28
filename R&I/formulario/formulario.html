@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro R&I</title>
+    <link rel="stylesheet" href="/formulario/formulario.css">
+</head>
+<body>
+
+    <section class="Formulario">
+        <h4>Registro en R&I</h4>
+        <form id="form">
+            <input class="bloques" type="text" id="name" placeholder="Ingrese su Nombre">
+            <input class="bloques" type="text" id="apellidos" placeholder="Ingrese sus Apellidos">
+            <input class="bloques" type="email" id="correo" placeholder="Ingrese su Correo">
+
+            
+            <div class="bloque-contrasena">
+                <input class="bloques" type="password" id="contraseña" placeholder="Ingrese su Contraseña">
+                <button id="visibilidad" class="visibilidad" type="button">Mostrar</button> 
+            </div>
+
+            <div>
+                <div class="g-recaptcha" data-sitekey="6LeUcWsqAAAAAHJllpTHYmy1LSiyQGxZRELk_mDX"></div>
+            </div>
+
+            <p>Estoy de acuerdo con los <a target="_blank" href="/contacto/mas/terminos.html">Términos</a></p>
+            <input class="boton" type="submit" value="Registrar">
+
+            <p class="peligro" id="peligrosid"></p>
+            <p class="exito" id="exitosid"></p> 
+
+            <p><a href="#">Iniciar Sesión</a></p>
+        </form>
+    </section>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <script src="/formulario/formulario.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+* {  /*Sireve para colocarlo en toda la paginas (universal) =* */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* para que el ancho ocupe el borde y el padding */
+}
+
+body {
+    background: linear-gradient(150deg, #0070cc, #24303c);
+    height: 100vh;
+}
+
+.Formulario {
+    width: 400px;
+    background-color: #24303c;
+    padding: 30px;
+    margin: auto; /* para que este centrado  */
+    margin-top: 100px;
+    border-radius: 4px; /* DE esa curvatura al .Formulario  */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    box-shadow: 7px 13px 37px black; /* crea sombra a la caja */
+}
+
+.Formulario h4 {
+    font-size: 22px;
+    margin-bottom: 20px; /*  establece el espacio requerido en la parte inferior del elemento */
+}
+
+.bloques {
+    width: 100%; /*establece el ancho de un elemento */
+    background-color: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #99ccff;
+    font-size: 18px;
+    color: #fff;
+}
+
+.bloque-contrasena {
+    position: relative;
+}
+
+/* Estilo para el botón de mostrar/ocultar contraseña */
+.visibilidad {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #99ccff;
+    background: none;
+    border: none;
+    font-size: 14px;
+    padding: 0;
+}
+
+.Formulario p {
+    height: 40px; /*Altura */
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;  /* Da el rango sobre el interlineado */
+}
+
+.Formulario a {
+    color: white;
+    text-decoration: none; /* Para quitar la decoracion inicial del link */
+}
+
+.Formulario a:hover { /* al pasar el cursor */
+    color: #99ccff;
+    text-decoration: underline; /* Para poner el subrayado */
+}
+
+input[type="submit"] {  /* llamar al input submit (el boton de registrar) */
+    width: 100%;
+    height: 50px;
+    border: 1px solid; /*establece una línea continua y sin agujeros el soild*/
+    background: #0070cc;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer; /*al pasar el cursor cambia de estilo*/
+    outline: none; /* Es para que sirva el soild al quitarlo*/
+}
+
+input[type="submit"]:hover { 
+    border-color: #24303c;
+    transition: .5s;
+}
+
+.peligro {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    padding: 10px;
+    background-color: transparent;
+    overflow: hidden;
+    white-space: normal;
+}
+
+@media (max-width: 768px) {
+    .Formulario {
+        width: 300px; 
+        padding: 20px; 
+        margin-top: 50px; 
+    }
+
+    .Formulario h4 {
+        font-size: 20px; 
+    }
+
+    .bloques {
+        font-size: 16px; 
+        padding: 8px;
+    }
+
+    .visibilidad {
+        font-size: 12px; 
+    }
+
+    input[type="submit"] {
+        height: 45px; 
+        font-size: 16px;
+    }
+
+    .Formulario p {
+        font-size: 16px; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .Formulario {
+        width: 90%; 
+        margin-top: 30px;
+        padding: 15px; 
+    }
+
+    .Formulario h4 {
+        font-size: 18px;
+    }
+
+    .bloques {
+        font-size: 14px; 
+        padding: 6px;
+    }
+
+    .visibilidad {
+        font-size: 10px; 
+    }
+
+    input[type="submit"] {
+        height: 40px; 
+        font-size: 14px;
+    }
+
+    .Formulario p {
+        font-size: 14px; 
+    }
+}

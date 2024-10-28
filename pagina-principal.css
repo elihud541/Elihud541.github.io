@@ -1,0 +1,444 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+}
+
+.headerlogo {
+    background-color: #0070cc;
+    color: #ffffff;
+    padding: 10px;
+    text-align: right;
+    transition: .5s;
+}
+
+.Logo {
+    font-size: 1.5em;
+    margin: 0;
+    transition: .5s;
+}
+
+.barramenu {
+    color: #ffffff;
+    background-color: #00439c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 1%;
+    font-weight: bold;
+    flex-wrap: wrap;
+    transition: .5s;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; /* Distribuye el espacio */
+    gap: 5px; /* Espaciado entre elementos */
+    transition: .5s;
+}
+
+li {
+    padding: 0 15px;
+    transition: .5s;
+}
+
+.enlacesmenu {
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.enlacesmenu:hover {
+    color: #0070cc;
+    transition: .5s;
+}
+
+.darkmode .enlacesmenu:hover{
+    color: #2b5166;
+}
+
+/* Botón de "Regístrate" */
+.botonregistrate {
+    background: #24303c;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 5px 15px; /* Añadimos padding para ajustar tamaño */
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+}
+
+.botonregistrate:hover {
+    background: #fff;
+    color: #24303c;
+    transition: .5s;
+    border: 1px solid #24303c;
+}
+
+.linkregistrate {
+    color: #ffffff;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.linkregistrate:hover {
+    color: #24303c;
+    transition: .5s;
+}
+
+/* Botón de "Modo Oscuro" */
+.botonmodo_oscuro {
+    background: #24303c;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 5px 15px;
+    cursor: pointer;
+    color: #fff;
+    transition: .5s;
+}
+
+.botonmodo_oscuro:hover {
+    background: #fff;
+    color: #24303c;
+    transition: .5s;
+    border: 1px solid #24303c;
+}
+
+body.darkmode {
+    background-color: #1b263b;
+    color: #fff;
+}
+
+.darkmode header {
+    background-color: #2b5166;
+    transition: .5s;
+}
+
+.darkmode nav {
+    background-color: #24303c;
+    transition: .5s;
+}
+
+.seccion1 {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.titulo {
+    font-size: 2.5rem;
+    margin-left: 50px;
+    width: 100%;
+}
+
+.texto {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 70px;
+    margin-top: -20px;
+}
+
+.textoseccion1 {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+#Logoimg {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+.prueba {
+    background-color: #0070cc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.boton-descarga {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    background-color: #1b263b;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px; 
+    box-shadow: 0 6px 15px rgba(0, 112, 204, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    display: inline-block; /* Evita que el botón se expanda al 100% */
+    margin-top: 20px; 
+    margin-left: 50px;
+}
+
+.boton-descarga:hover {
+    background-color: #005bb5; 
+    box-shadow: 0 8px 20px rgba(0, 112, 204, 0.6); 
+}
+
+.darkmode .boton-descarga{
+    background-color: #0070cc;
+}
+
+.boton-descarga:active {
+    transform: translateY(1px);
+}
+
+.secciondeltema {
+    margin-left: 50px;
+    font-size: 3rem;
+    color: white;
+}
+
+.secciondelcontenido {
+    font-size: 20px;
+    margin-left: 60px;
+    color: white;
+    max-width: 600px;
+}
+
+#imagenseccion {
+    width: 100%;
+    max-width: 600px;
+    margin-right: 70px;
+    height: auto;
+}
+
+.modelos {
+    background: linear-gradient(#0070cc, #00439c);
+    background-repeat: no-repeat;
+    color: white;
+    margin: 50px;
+    padding: 20px;
+    max-width: 100%;
+    transition: .5s;
+}
+
+.titulomodelos {
+    font-size: 3.5rem;
+    margin: 20px;
+}
+
+.parrafomodelos {
+    color: #fff;
+    margin: 40px;
+    font-size: 30px;
+    max-width: 600px;
+}
+
+.imgmodelos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adaptable según el espacio disponible */
+    gap: 20px; /* Espacio entre las imágenes */
+    margin: 20px 0;
+    padding: 10px;
+    justify-items: center;
+    border-radius: 20px;
+}
+
+.imgmodelos img {
+    width: 100%;
+    max-width: 250px; /* Controla el tamaño máximo de las imágenes */
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Añade animación suave */
+}
+
+.imgmodelos img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+}
+
+.separadorfobias {
+    text-align: center;
+}
+
+.fobias {
+    color: #ffffff;
+    background-color: #00439c;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+    transition: .5s;
+}
+
+.subfobias {
+    max-width: 200px;
+}
+
+.redes {
+    margin: 70px;
+    text-align: center;
+}
+
+.redestexto {
+    font-size: 50px;
+}
+
+.imredes {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    flex-wrap: wrap; /* Asegura que las imágenes se envuelvan en pantallas pequeñas */
+}
+
+.imgredes {
+    width: 160px;
+    margin: 0px 30px;
+    max-width: 100%; /* Ajuste responsivo */
+    height: auto; /* Mantiene la proporción de las imágenes */
+}
+
+.footerr_i {
+    text-align: center;
+    padding: 10px;
+}
+
+footer {
+    background-color: #00439c;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    transition: .5s;
+}
+
+.linksfooter {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: .5s;
+}
+
+.linksfooter:hover {
+    color: #0070cc;
+    transition: .5s;
+}
+
+.darkmode .prueba{
+    background-color: #192D46;
+    transition: .5s;
+}
+
+.darkmode .modelos{
+    background: linear-gradient(#24303c, #192D46);
+    transition: .5s;
+}
+
+.darkmode .fobias{
+    background-color: #24303c;
+    transition: .5s;
+}
+
+.darkmode footer{
+    background-color: #192D46;
+    transition: .5s;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .headerlogo {
+        text-align: center; /* Centrar el logo en pantallas pequeñas */
+    }
+    
+    .barramenu {
+        flex-direction: column; /* Cambiar dirección del menú */
+        align-items: flex-start;
+    }
+
+    ul {
+        flex-direction: column; /* Cambiar la dirección de la lista de navegación */
+        align-items: flex-start;
+        gap: 10px; /* Más espacio entre elementos */
+    }
+
+    .seccion1 {
+        flex-direction: column; /* Apilar contenido en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .titulo, .texto {
+        margin-left: 0; /* Eliminar márgenes grandes en pantallas pequeñas */
+        text-align: center; /* Centrar textos */
+    }
+
+    .prueba, .modelos {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #imagenseccion {
+        margin-right: 0;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .boton-descarga {
+        margin: 20px auto; /* Centrar botón */
+    }
+
+    .imgmodelos {
+        grid-template-columns: repeat(2, 1fr); /* Menos columnas en pantallas pequeñas */
+    }
+
+    .fobias {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subfobias {
+        margin-bottom: 20px;
+        max-width: 100%; /* Ocupa todo el ancho en móviles */
+    }
+
+    .redes {
+        margin: 40px 10px;
+    }
+
+    .imgredes {
+        width: 100px; /* Reducir tamaño de iconos de redes en móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 1.8rem; /* Reducir el tamaño de los títulos */
+    }
+
+    .textoseccion1 {
+        font-size: 1rem; /* Reducir el tamaño del texto en la sección principal */
+        text-align: center;
+    }
+
+    .titulomodelos {
+        font-size: 2rem; /* Reducir el tamaño del título de la sección de modelos */
+    }
+
+    .parrafomodelos {
+        font-size: 1.2rem; /* Ajustar tamaño del párrafo de los modelos */
+    }
+
+    .redestexto {
+        font-size: 2rem; /* Reducir el tamaño del texto de redes sociales */
+    }
+
+    .imgredes {
+        width: 80px; /* Iconos de redes aún más pequeños */
+    }
+
+    .boton-descarga {
+        padding: 10px 20px; /* Botón más pequeño en pantallas pequeñas */
+    }
+}
